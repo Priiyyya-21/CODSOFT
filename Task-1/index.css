@@ -90,7 +90,7 @@ section {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(/images/pexels-photo-427679.jpeg);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(/images/background.jpg);
     background-size: cover;
     background-position: bottom center;
     display: flex;
@@ -188,6 +188,16 @@ header.sticky {
     color: var(--main-color);
 }
 
+
+.feature-text {
+    text-align: center;
+    
+}
+
+.feature-text h2 {
+    font-size: var(--h2-font);
+    font-weight: 600;
+}
 
 /*tour*/
 
@@ -313,10 +323,7 @@ header.sticky {
     transition: all .50s ease;
 }
 
-.footer-box a:hover {
-    transform: translateX(-5px);
-    color: var(--text-color);
-}
+
 
 .social a {
     display: inline-flex;
@@ -489,8 +496,11 @@ header.sticky {
 
 
 /* Mobile and Tablet Styles */
-@media screen and (max-width: 767px) {
-    header {
+
+/* @media only screen and (max-width: 700px) {
+ 
+/* @media screen and (max-width: 767px) { */
+    /* header { 
       padding: 15px 8%;
     }
     
@@ -509,9 +519,42 @@ header.sticky {
       grid-template-columns: repeat(auto-fit, minmax(100px, auto));
       gap: 2rem;
     }
+   
     
+    .newsletter-content {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    
+    .newsletter-content form {
+      grid-template-columns: 1fr;
+    }
+    
+    .footer {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+   
+  }
+   */
+
+  /* Tablet Styles */
+   @media only screen and (max-width: 600px) {
+
+  /* @media screen and (min-width: 768px) and (max-width: 600px) { */
+         .home-text h1 {
+      font-size: 1rem;
+    }
+     
     #menu-icon {
         display: block;
+    }
+    .feature-content {
+      gap: 1.5rem;
+    }
+    .footer-box{
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .navbar {
@@ -541,31 +584,5 @@ header.sticky {
     .navbar .open {
         left: 0;
     }
+  } 
     
-    .newsletter-content {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-    
-    .newsletter-content form {
-      grid-template-columns: 1fr;
-    }
-    
-    .footer {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-  }
-  
-  /* Tablet Styles */
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .home-text h1 {
-      font-size: 4rem;
-    }
-    
-    .feature-content {
-      gap: 1.5rem;
-    }
-    
-  }
-  
