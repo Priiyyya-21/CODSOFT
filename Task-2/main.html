@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/489efb5b95.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
 
     <title>Priya's Portfolio</title>
     <link rel="icon" type="image/png" href="images/favicon.png" hreflang="en-us">
@@ -18,7 +18,6 @@
 </head>
 
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-turn-up"></i></button>
     <!--=====================HEADER====================-->
     <div id="header">
         <div class="container">
@@ -30,9 +29,8 @@
                     <li><a href="#codingprofile"><i class="uil uil-laptop"></i>&nbsp Coding Profiles</a></li>
                     <li><a href="#projects"><i class="uil uil-briefcase-alt"></i>&nbsp Projects</a></li>
                     <li><a href="#contact"><i class="uil uil-phone"></i>&nbsp Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                <i class="fa-solid fa-bars" ></i>
             </nav>
             <div class="header-text">
                 <p>Web Developer</p>
@@ -41,12 +39,12 @@
         </div>
     </div>
 
-    <!--==================== ABOUT====================-->
+    <!--=====================ABOUT====================-->
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/priya-about.png">
+                    <img src="images/priya-img.png">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -57,9 +55,8 @@
                         practice on platforms such as LeetCode and GeeksforGeeks.</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link">Skills</p>
+
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <table style="width:100%">
@@ -98,60 +95,16 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="tab-contents" id="achievements">
 
-                        <table style="width:100%">
-                            <tr id="headings">
-                                <th>CodeChef Contest</th>
-                                <th>Global Rank</th>
-                                <th>Total Participants</th>
-                            </tr>
-                            <tr>
-                                <td>START75D</td>
-                                <td>39</td>
-                                <td>14508</td>
 
-                            </tr>
-                            <tr>
-                                <td>START53D</td>
-                                <td>341</td>
-                                <td>14512</td>
-                                  
-                            </tr>
-                            <tr>
-                                <td>START74D</td>
-                                <td>112</td>
-                                <td>15242</td>
-
-                            </tr>
-
-                        </table>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <table style="width:100%">
-                            <tr id="headings">
-                                <th>Institution</th>
-                                <th>CGPA/Percentage</th>
-                            </tr>
-                            <tr>
-                                <td>MCA, NIT Jamshedpur</td>
-                                <td>8.13</td>
-                            </tr>
-                            <tr>
-                                <td>BCA, RCM Bhubaneswar</td>
-                                <td>80%</td>
-                                  
-                            </tr>
-                        </table>
-
-                    </div>
                 </div>
             </div>
         </div>
 
     </div>
 
-    <!--======================CODING PROFILE=======================-->
+
+    <!--=====================CODING PROFILE====================-->
     <div id="codingprofile">
         <div class="container">
             <h1 class="sub-title">My Coding Profiles</h1>
@@ -204,7 +157,7 @@
                             insights on the world of blogging.Whether you're a seasoned blogger or just getting
                             started,we're here to support you every step of the way.So why not join our community today
                             and start your journey to blogging bliss. </p>
-                        <a href="https://bloggingbliss.up.railway.app/" target="_blank"><i
+                        <a href="  https://github.com/Priiyyya-21/bloggingbliss" target="_blank"><i
                                 class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -218,22 +171,14 @@
                                 class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/project3.jpg">
-                    <div class="layer">
-                        <h3>TinDog</h3>
-                        <p>TinDog is a social networking platform for dogs, where owners can create profiles for
-                            their furry companions and connect with other dog owners for playdates, walks, and even
-                            potential breeding matches.</p>
-                        <a href="https://github.com/Priiyyya-21/Tindog" target="_blank"><i
-                                class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
+
 
             </div>
         </div>
     </div>
     <!--======================CONTACT=======================-->
+
+
     <div id="contact">
         <div class="container">
             <div class="row">
@@ -249,31 +194,25 @@
                         <a href="https://twitter.com/priyamajhi79" target="_blank"><i
                                 class="fa-brands fa-twitter"></i></a>
                     </div>
-                    <a href="images/Priya Majhi Resume.pdf" target="_blank" download class="btn btn2">Download CV</a>
+                   
                 </div>
 
                 <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="9" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
+                    <h1 class="sub-title">Resume</h1>
+                    <p>Please refer to my resume for more information</p>
+                    <a href="images/Priya Majhi Resume.pdf" target="_blank" download class="btn btn2">Download Resume</a>
                 </div>
+
             </div>
         </div>
-        <div class="copyright">
-            <p>Copyright © Priya Majhi </p>
-        </div>
+       
     </div>
-
-
-    <!--======================SCRIPT=======================-->
-    <script src="script.js">
-    </script>
-
-
+   <!--======================FOOTER=======================-->
+<footer>
+    <div class="copyright">
+        <p>Copyright © Priya Majhi </p>
+    </div>
+</footer>
 
 </body>
 
