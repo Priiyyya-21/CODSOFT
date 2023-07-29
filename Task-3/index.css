@@ -56,9 +56,10 @@ button{
 }
 .equalBtn{
   
-    background-color: rgb(239, 172, 172);
+    /* background-color: rgb(222, 89, 55); */
+    background-color: rgb(251, 89, 8);
 }
-.operator,.equalBtn{
+.operator{
 
-   background-color : rgb(253, 112, 25);
+   background-color : rgb(225, 141, 89);
 }
